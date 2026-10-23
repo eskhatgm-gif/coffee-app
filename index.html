@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Bliss Coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="welcome" id="welcome">
+        <div class="welcome-content">
+            <h1>Brew Bliss ☕</h1>
+            <h2 id="welcomeTitle">Кофеден ләззат ал!</h2>
+            <p id="welcomeText">Сіздің сүйікті кофе дүкеніңіз</p>
+            <button id="startBtn">Бастау</button>
+        </div>
+    </section>
+
+    <main class="home hidden" id="home">
+
+        <header>
+            <div>
+                <p id="locationLabel">Біздің мекенжай</p>
+                <h3>Алматы, Шевченко 97</h3>
+            </div>
+
+            <select id="language">
+                <option value="kk">ҚАЗ</option>
+                <option value="ru">РУС</option>
+                <option value="en">ENG</option>
+            </select>
+        </header>
+
+        <input type="text" id="search" placeholder="Кофе іздеу...">
+
+        <div class="promo">
+            <p id="promoLabel">АРНАЙЫ ҰСЫНЫС</p>
+            <h2 id="promoTitle">Бір кофе ал, екіншісі тегін!</h2>
+            <p id="promoText">Кофеңізден ләззат алыңыз ☕</p>
+        </div>
+
+        <h2 id="categoryTitle">Кофе санаттары</h2>
+
+        <div class="categories" id="categories">
+            <button class="category active" data-category="all">Барлығы</button>
+            <button class="category" data-category="espresso">Эспрессо</button>
+            <button class="category" data-category="milk">Сүтті кофе</button>
+            <button class="category" data-category="cold">Салқын кофе</button>
+        </div>
+
+        <div class="section-heading">
+            <h2 id="popularTitle">Танымал кофелер</h2>
+            <span id="coffeeCount"></span>
+        </div>
+
+        <div class="products" id="products"></div>
+
+        <section class="cart" id="cart">
+            <h2 id="cartTitle">🛒 Сіздің себетіңіз</h2>
+            <div id="cartItems"></div>
+            <h3 id="cartTotal">Жалпы: 0 ₸</h3>
+
+            <label id="customerLabel" for="customerName">
+                Сіздің атыңыз
+            </label>
+            <input id="customerName" type="text" placeholder="Атыңызды жазыңыз">
+
+            <label id="addressLabel" for="customerAddress">
+                Жеткізу мекенжайы
+            </label>
+            <input id="customerAddress" type="text"
+                   placeholder="Мекенжайыңызды жазыңыз">
+
+            <button id="orderBtn" class="main-button">
+                WhatsApp арқылы тапсырыс беру
+            </button>
+        </section>
+
+        <section class="description">
+            <h2 id="aboutTitle">☕ Біз туралы</h2>
+            <p id="aboutText">
+                Brew Bliss — хош иісті кофе мен жайлы атмосфераны
+                бағалайтын жандарға арналған кофе дүкені.
+                Әр шыныаяқ сізге қуаныш сыйласын!
+            </p>
+        </section>
+
+        <section class="map-section">
+            <h2 id="mapTitle">📍 Бізді табыңыз</h2>
+            <p id="mapAddress">Алматы қаласы, Шевченко көшесі, 97</p>
+
+            <iframe
+                title="Brew Bliss орналасқан жер"
+                src="https://maps.google.com/maps?q=Shevchenko%2097%2C%20Almaty%2C%20Kazakhstan&output=embed"
+                width="100%"
+                height="280"
+                style="border:0"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+
+            <a class="map-link"
+               href="https://www.google.com/maps/search/?api=1&query=Shevchenko+97+Almaty+Kazakhstan"
+               target="_blank" rel="noopener">
+                <span id="mapButtonText">Картадан ашу</span>
+            </a>
+        </section>
+
+        <footer>
+            <p id="footerText">Тапсырыс беру және байланыс</p>
+            <h3>+7 705 353 53 38</h3>
+            <a href="https://wa.me/77053535338"
+               target="_blank" rel="noopener" class="whatsapp">
+                WhatsApp
+            </a>
+            <p>© 2026 Brew Bliss Coffee</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
